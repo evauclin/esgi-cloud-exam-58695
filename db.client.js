@@ -14,10 +14,10 @@ const sequelize = new Sequelize(
 );
 
 // authentication and synchronization
-/* sequelize.authenticate()
+sequelize.authenticate()
   .then(() => {
     sequelize.sync().catch(() => console.log("Cannot sync the database"));
   })
   .catch(() => console.log("Cannot connect to database, please check environment credentials"));
 
-module.exports = sequelize;*/
+module.exports = sequelize;
